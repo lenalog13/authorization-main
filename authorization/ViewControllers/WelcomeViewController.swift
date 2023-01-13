@@ -9,13 +9,31 @@ import UIKit
 
 final class WelcomeViewController: UIViewController {
     
-    @IBOutlet var welcomeLable: UILabel!
+    @IBOutlet var fullNameLable: UILabel!
+    @IBOutlet var ageLable: UILabel!
+    @IBOutlet var plaseLable: UILabel!
+    @IBOutlet var educationLable: UILabel!
+    @IBOutlet var genderLable: UILabel!
+    
+    @IBOutlet var hobbyButton: UIButton!
     
     var person: Person!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLable.text = "Welcome, \(person.name) \(person.surname)!"
+        
+        fullNameLable.text = "\(person.name) \(person.surname)"
+        ageLable.text = "age: \(person.age)"
+        plaseLable.text = "city: \(person.city)"
+        educationLable.text = "education: \(person.egucation)"
+        genderLable.text = person.gender.rawValue
+        
+        hobbyButton.layer.cornerRadius = 10
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let tabBarController = segue.destination as? TabBarController else { return }
+        tabBarController.hobby = person.hobby
     }
     
 }
