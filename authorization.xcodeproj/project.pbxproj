@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DB646302971E16F005795FB /* FirstHobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6462F2971E16F005795FB /* FirstHobbyViewController.swift */; };
+		4DB646322971E1C3005795FB /* SecondHobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB646312971E1C3005795FB /* SecondHobbyViewController.swift */; };
+		4DB646342971E20F005795FB /* ThirdHobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB646332971E20F005795FB /* ThirdHobbyViewController.swift */; };
 		4DCF5D102956F8410083828F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF5D0F2956F8410083828F /* User.swift */; };
-		4DCF5D192971BA840083828F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF5D182971BA840083828F /* TabBarController.swift */; };
 		4DE70C8E294F3A6A00D1EA47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE70C8D294F3A6A00D1EA47 /* AppDelegate.swift */; };
 		4DE70C90294F3A6A00D1EA47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE70C8F294F3A6A00D1EA47 /* SceneDelegate.swift */; };
 		4DE70C92294F3A6A00D1EA47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE70C91294F3A6A00D1EA47 /* LoginViewController.swift */; };
@@ -19,8 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DB6462F2971E16F005795FB /* FirstHobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstHobbyViewController.swift; sourceTree = "<group>"; };
+		4DB646312971E1C3005795FB /* SecondHobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHobbyViewController.swift; sourceTree = "<group>"; };
+		4DB646332971E20F005795FB /* ThirdHobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdHobbyViewController.swift; sourceTree = "<group>"; };
 		4DCF5D0F2956F8410083828F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		4DCF5D182971BA840083828F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4DE70C8A294F3A6A00D1EA47 /* authorization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = authorization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE70C8D294F3A6A00D1EA47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DE70C8F294F3A6A00D1EA47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +60,9 @@
 			children = (
 				4DE70C91294F3A6A00D1EA47 /* LoginViewController.swift */,
 				4DE70CA1294F3C6200D1EA47 /* WelcomeViewController.swift */,
-				4DCF5D182971BA840083828F /* TabBarController.swift */,
+				4DB6462F2971E16F005795FB /* FirstHobbyViewController.swift */,
+				4DB646312971E1C3005795FB /* SecondHobbyViewController.swift */,
+				4DB646332971E20F005795FB /* ThirdHobbyViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -180,11 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DCF5D102956F8410083828F /* User.swift in Sources */,
+				4DB646322971E1C3005795FB /* SecondHobbyViewController.swift in Sources */,
+				4DB646342971E20F005795FB /* ThirdHobbyViewController.swift in Sources */,
 				4DE70C92294F3A6A00D1EA47 /* LoginViewController.swift in Sources */,
 				4DE70C8E294F3A6A00D1EA47 /* AppDelegate.swift in Sources */,
-				4DCF5D192971BA840083828F /* TabBarController.swift in Sources */,
 				4DE70CA2294F3C6200D1EA47 /* WelcomeViewController.swift in Sources */,
 				4DE70C90294F3A6A00D1EA47 /* SceneDelegate.swift in Sources */,
+				4DB646302971E16F005795FB /* FirstHobbyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

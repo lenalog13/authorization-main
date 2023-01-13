@@ -34,8 +34,17 @@ final class WelcomeViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarController = segue.destination as? TabBarController else { return }
-        tabBarController.hobby = person.hobby
+        guard let tabBar = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBar.viewControllers else { return }
+        
+       viewControllers.forEach { viewController in
+            if let firstHobbyVC = viewController as? FirstHobbyViewController {
+                firstHobbyVC.information = person.hobby[0]
+            } else if let secondHobbyVC = viewController as? SecondHobbyViewController { secondHobbyVC.information = person.hobby[1]
+            } else if let thirdHobbyVC = viewController as? ThirdhobbyViewController {
+                thirdHobbyVC.information = person.hobby[2]
+            }
+        }
     }
     
 }
