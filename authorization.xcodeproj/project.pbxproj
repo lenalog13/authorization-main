@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DCF5D102956F8410083828F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF5D0F2956F8410083828F /* Person.swift */; };
+		4DCF5D102956F8410083828F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF5D0F2956F8410083828F /* User.swift */; };
 		4DCF5D192971BA840083828F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF5D182971BA840083828F /* TabBarController.swift */; };
 		4DE70C8E294F3A6A00D1EA47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE70C8D294F3A6A00D1EA47 /* AppDelegate.swift */; };
 		4DE70C90294F3A6A00D1EA47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE70C8F294F3A6A00D1EA47 /* SceneDelegate.swift */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4DCF5D0F2956F8410083828F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		4DCF5D0F2956F8410083828F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4DCF5D182971BA840083828F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4DE70C8A294F3A6A00D1EA47 /* authorization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = authorization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DE70C8D294F3A6A00D1EA47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		4DCF5D132971864E0083828F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4DCF5D0F2956F8410083828F /* Person.swift */,
+				4DCF5D0F2956F8410083828F /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DCF5D102956F8410083828F /* Person.swift in Sources */,
+				4DCF5D102956F8410083828F /* User.swift in Sources */,
 				4DE70C92294F3A6A00D1EA47 /* LoginViewController.swift in Sources */,
 				4DE70C8E294F3A6A00D1EA47 /* AppDelegate.swift in Sources */,
 				4DCF5D192971BA840083828F /* TabBarController.swift in Sources */,
