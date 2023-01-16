@@ -79,17 +79,17 @@
                     <connections>
                         <outlet property="loginTextField" destination="dbO-wP-k2n" id="fau-hl-y88"/>
                         <outlet property="passwordTextField" destination="HWP-F8-stx" id="yBe-j6-eXI"/>
-                        <segue destination="KaM-77-Bn3" kind="presentation" identifier="LogIn" modalPresentationStyle="fullScreen" id="QGK-8s-n3V"/>
+                        <segue destination="acj-HD-25M" kind="presentation" identifier="LogIn" id="LcM-3R-dV7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131" y="4"/>
+            <point key="canvasLocation" x="4020" y="1"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--fullName-->
         <scene sceneID="puO-PB-fPz">
             <objects>
-                <viewController id="KaM-77-Bn3" customClass="WelcomeViewController" customModule="authorization" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="KaM-77-Bn3" customClass="WelcomeViewController" customModule="authorization" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6SE-iV-sA2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,16 +104,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="9Oe-LO-IjS">
-                                <rect key="frame" x="40" y="60" width="240" height="390.5"/>
+                                <rect key="frame" x="40" y="64" width="240" height="327.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EEM-ad-hoC">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="41"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="cIM-lY-zhT">
-                                        <rect key="frame" x="0.0" y="63" width="240" height="327.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="327.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1BW-Xn-Nwf">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="31.5"/>
@@ -153,7 +147,7 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Hobby"/>
                                                 <connections>
-                                                    <segue destination="OuI-Wz-2aa" kind="presentation" id="5dh-ao-EGm"/>
+                                                    <segue destination="OuI-Wz-2aa" kind="show" id="iv4-jd-uch"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -169,16 +163,16 @@
                             <constraint firstItem="SOJ-dR-JjC" firstAttribute="trailing" secondItem="9Oe-LO-IjS" secondAttribute="trailing" constant="40" id="TSP-X5-fga"/>
                             <constraint firstItem="9Oe-LO-IjS" firstAttribute="leading" secondItem="SOJ-dR-JjC" secondAttribute="leading" constant="40" id="bX9-PA-yty"/>
                             <constraint firstItem="Sz0-uc-y0M" firstAttribute="centerX" secondItem="SOJ-dR-JjC" secondAttribute="centerX" id="rg5-sq-WFD"/>
-                            <constraint firstItem="9Oe-LO-IjS" firstAttribute="top" secondItem="SOJ-dR-JjC" secondAttribute="top" constant="60" id="xho-Pa-DNi"/>
+                            <constraint firstItem="9Oe-LO-IjS" firstAttribute="top" secondItem="SOJ-dR-JjC" secondAttribute="top" constant="20" id="xho-Pa-DNi"/>
                         </constraints>
                         <variation key="displayGamut=sRGB-heightClass=regular-userInterfaceIdiom=mac-widthClass=compact">
                             <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="0.8100941639" colorSpace="custom" customColorSpace="sRGB"/>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="fullName" id="H9D-N2-SRB"/>
                     <connections>
                         <outlet property="ageLable" destination="1BW-Xn-Nwf" id="BdD-U9-T2N"/>
                         <outlet property="educationLable" destination="Hn3-W2-gg3" id="0eU-q8-E8j"/>
-                        <outlet property="fullNameLable" destination="EEM-ad-hoC" id="DWF-nb-yq8"/>
                         <outlet property="genderLable" destination="L2D-lF-Jog" id="sEI-fg-NgE"/>
                         <outlet property="hobbyButton" destination="SBe-87-3Yr" id="1Gx-uF-Fb6"/>
                         <outlet property="plaseLable" destination="j0l-f1-yki" id="fZl-Ni-FF5"/>
@@ -188,18 +182,18 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRK-hM-zDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="For-n4-Gzx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="906" y="4"/>
+            <point key="canvasLocation" x="5777" y="2"/>
         </scene>
         <!--Second-->
         <scene sceneID="LqQ-oN-hPG">
             <objects>
                 <viewController id="qxc-Ec-5SZ" customClass="SecondHobbyViewController" customModule="authorization" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mjk-Bc-QKN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="sMX-rN-ukh">
-                                <rect key="frame" x="20" y="50" width="280" height="103"/>
+                                <rect key="frame" x="20" y="94" width="280" height="103"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hobby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tye-OB-Ffe">
                                         <rect key="frame" x="94" y="0.0" width="92" height="41"/>
@@ -232,18 +226,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BpC-ga-0yF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2575" y="301"/>
+            <point key="canvasLocation" x="7561.875" y="300"/>
         </scene>
         <!--Third-->
         <scene sceneID="xP9-pP-PFV">
             <objects>
                 <viewController id="Wnq-v5-N89" customClass="ThirdhobbyViewController" customModule="authorization" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j1X-Zp-0n7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="aPZ-dH-SGM">
-                                <rect key="frame" x="20" y="50" width="280" height="103"/>
+                                <rect key="frame" x="20" y="94" width="280" height="103"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hobby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmB-UL-0nU">
                                         <rect key="frame" x="94" y="0.0" width="92" height="41"/>
@@ -276,18 +270,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zmJ-H2-rpM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1665" y="745"/>
+            <point key="canvasLocation" x="6653" y="811"/>
         </scene>
         <!--First-->
         <scene sceneID="7Sk-X7-paF">
             <objects>
                 <viewController id="bax-HF-EfX" customClass="FirstHobbyViewController" customModule="authorization" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sKB-Ed-gSc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Fwy-UE-S9G">
-                                <rect key="frame" x="20" y="50" width="280" height="103"/>
+                                <rect key="frame" x="20" y="94" width="280" height="103"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hobby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYz-Lv-gRY">
                                         <rect key="frame" x="94" y="0.0" width="92" height="41"/>
@@ -320,12 +314,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgA-nd-4V1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2574.375" y="-311.61971830985914"/>
+            <point key="canvasLocation" x="7561.875" y="-311.61971830985914"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xc4-Y3-NkL">
             <objects>
-                <tabBarController id="OuI-Wz-2aa" customClass="TabBarController" customModule="authorization" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="OuI-Wz-2aa" customClass="TabBarController" customModule="authorization" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IZ0-EG-GU2"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QIh-tr-O8u">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -340,7 +335,26 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTe-Xn-avQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1665" y="3"/>
+            <point key="canvasLocation" x="6652.5" y="2.112676056338028"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0XM-LW-Ipe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="acj-HD-25M" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="43X-xV-nf9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x3k-dq-esz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KaM-77-Bn3" kind="relationship" relationship="rootViewController" id="3S1-VO-rGD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5c-OZ-VO5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4918" y="2"/>
         </scene>
     </scenes>
     <resources>

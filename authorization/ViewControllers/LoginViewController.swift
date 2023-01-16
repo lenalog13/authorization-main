@@ -15,14 +15,17 @@ final class LoginViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if touches.first != nil {
-            view.endEditing(true)
-        }
         super .touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVS = segue.destination as? WelcomeViewController else { return }
+        guard let navigationVC = segue.destination as? UINavigationController else { return }
+        guard
+            let welcomeVS = navigationVC.topViewController as? WelcomeViewController else {
+            return
+        }
+        
         welcomeVS.person = user.person
     }
     

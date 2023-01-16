@@ -9,7 +9,6 @@ import UIKit
 
 final class WelcomeViewController: UIViewController {
     
-    @IBOutlet var fullNameLable: UILabel!
     @IBOutlet var ageLable: UILabel!
     @IBOutlet var zodiacSignLabel: UILabel!
     @IBOutlet var plaseLable: UILabel!
@@ -23,7 +22,7 @@ final class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        fullNameLable.text = "\(person.name) \(person.surname)"
+        title = person.fullName
         ageLable.text = "age: \(person.age)"
         zodiacSignLabel.text = "zodiac sign: \(person.zodiacSign)"
         plaseLable.text = "city: \(person.city)"
